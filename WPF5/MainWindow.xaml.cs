@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing.Design;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,37 +91,12 @@ namespace WPF5
 
         private void MenuItem_Click_Open(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "JPEG (*.jpeg;*.jpg)|*.jpeg;*.jpg|PNG (*.png)|*.png|Все файлы изображений(*.*)|(*.*)";
-            if (ofd.ShowDialog()==true)
-            {
-                //ImageEditor.Image 
-            }
+            
         }
 
         private void MenuItem_Click_Save(object sender, RoutedEventArgs e)
         {
-            //SaveFileDialog sfd = new SaveFileDialog();
-            //sfd.Filter = "Images|*.png;*.bmp;*.jpg";
-            //ImageFormat format = ImageFormat.Png;
-            //if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    string ext = System.IO.Path.GetExtension(sfd.FileName);
-            //    switch (ext)
-            //    {
-            //        case ".jpg":
-            //            format = ImageFormat.Jpeg;
-            //            break;
-            //        case ".bmp":
-            //            format = ImageFormat.Bmp;
-            //            break;
-            //    }
-            //    canvas.Image.Save(sfd.FileName, format);
-            //}
-
-
-            //SaveFileDialog saveFileDialog = new SaveFileDialog();
-            //saveFileDialog.Filter = "JPEG (*.jpeg;*.jpg)|*.jpeg;*.jpg|PNG (*.png)|*.png|Все файлы изображений(*.*)|(*.*)";
+            
         }
 
         private void MenuItem_Click_Exit(object sender, RoutedEventArgs e)
